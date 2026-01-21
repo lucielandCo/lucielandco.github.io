@@ -1,39 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================
+   Global Reset & Base
+========================= */
 
-  <title>Shop | Luciel & Co.</title>
-  <meta name="description" content="Shop digital products from Luciel & Co. Printable planners, wall art, coloring pages, ebooks, and digital design files.">
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <link rel="stylesheet" href="style.css">
-</head>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #faf9f7;
+  color: #333;
+  line-height: 1.6;
+}
 
-<body>
+/* =========================
+   Links
+========================= */
 
-  <header class="site-header">
-    <h1>Luciel & Co.</h1>
-    <p class="tagline">Digital products made with love</p>
+a {
+  color: #6b4eff;
+  text-decoration: none;
+}
 
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+a:hover {
+  text-decoration: underline;
+}
 
-  <main>
+/* =========================
+   Header & Navigation
+========================= */
 
-    <section class="shop">
-      <h2>Shop Digital Products</h2>
-      <p class="shop-intro">
-        Instant downloads · No physical items · Personal use unless stated
-      </p>
+.site-header {
+  background: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
 
-      <div class="products">
+.site-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
 
+.tagline {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+.nav {
+  margin-top: 1rem;
+}
+
+.nav a {
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+/* =========================
+   Main Content
+========================= */
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* =========================
+   Shop Section
+========================= */
+
+.shop h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.shop-intro {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* =========================
+   Product Cards
+========================= */
+
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid #ececec;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.image-placeholder {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+}
+
+/* =========================
+   PayPal Button Area
+========================= */
+
+.paypal-button {
+  margin-top: 1rem;
+}
+
+/* =========================
+   License Page
+========================= */
+
+.license h2 {
+  margin-bottom: 1rem;
+}
+
+.license h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.license ul {
+  margin-left: 1.2rem;
+  list-style: disc;
+}
+
+.license p {
+  margin-bottom: 0.75rem;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* =========================
+   Mobile Tweaks
+========================= */
+
+@media (max-width: 600px) {
+  .nav a {
+    display: inline-block;
+    margin: 0.4rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+}
         <!-- PRODUCT 1 -->
         <div class="product-card">
           <div class="image-placeholder">🗓️</div>
