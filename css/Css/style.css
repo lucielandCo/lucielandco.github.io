@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shop | Luciel & Co.</title>
+  <meta name="description" content="Shop digital products from Luciel & Co. Printable planners, wall art, coloring pages, ebooks, and digital design files.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1>Luciel & Co.</h1>
+    <p class="tagline">Digital products made with love</p>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="shop">
+      <h2>Shop Digital Products</h2>
+      <p class="shop-intro">
+        Instant downloads · No physical items · Personal use unless stated
+      </p>
+
+      <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+          <div class="image-placeholder">🗓️</div>
+          <h3>Printable Planner</h3>
+          <p>Minimal, cute planner pages for daily organization.</p>
+          <p class="price">$5.00</p>
+
+          <!-- PayPal button goes here -->
+          <div class="paypal-button">
+            <!-- PayPal embed later -->
+          </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+          <div class="image-placeholder">🎨</div>
+          <h3>Wall Art & Coloring Pages</h3>
+          <p>High-quality digital art and relaxing coloring pages.</p>
+          <p class="price">$4.00</p>
+
+          <div class="paypal-button">
+            <!-- PayPal embed later -->
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+          <div class="image-placeholder">👕</div>
+          <h3>T-Shirt Design File</h3>
+          <p>Digital design file for personal printing use.</p>
+          <p class="price">$6.00</p>
+
+          <div class="paypal-button">
+            <!-- PayPal embed later -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Luciel & Co.</p>
+    <p>All products are digital downloads</p>
+  </footer>
+
+</body>
+</html>
 
